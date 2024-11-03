@@ -1,0 +1,37 @@
+.appbar {
+  color: #fff !important;
+  background: #004792 !important;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  border: none;
+  a:visited {
+    color: none !important;
+  }
+}
+
+.linkdiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  margin-left: 3rem;
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 100px;
+    &:hover {
+      color: lightblue !important;
+    }
+  }
+}
+
+.title-navbar {
+  letter-spacing: 1px;
+}
+
+.sign-up-btn {
+  background-color: #fff !important;
+  color: black !important;
+}

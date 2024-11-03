@@ -1,0 +1,48 @@
+.signup-modal {
+  background: #fff !important;
+  width: 500px !important;
+  min-height: 500px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 9px;
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #333333 !important;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1rem;
+    color: #333333 !important;
+  }
+}
+
+.signup-btn-modal {
+  button {
+    background-color: #ee964b;
+    width: 200px;
+    color: #1e1e1e !important;
+    &:hover {
+      background-color: #ee964b50;
+    }
+  }
+}
+
+.checkmark-modal {
+  background: #fff !important;
+  width: 500px !important;
+  height: 500px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

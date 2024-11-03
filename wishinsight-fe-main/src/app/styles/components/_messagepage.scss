@@ -1,0 +1,43 @@
+.sidebar-chat {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 250px;
+  z-index: 99;
+}
+
+.participant-row {
+  padding: 1rem;
+  font-size: 1rem;
+  height: 60px;
+  border-bottom: 1px solid lightgray;
+  text-transform: capitalize;
+  cursor: pointer;
+  width: 100%;
+  &:hover {
+    background: #c1cad640;
+  }
+}
+
+.chat-wrap {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background: #fefefe;
+  overflow: scroll;
+  height: 600px;
+  position: relative;
+  .chat-input {
+    position: sticky;
+  }
+}
+.loading-chat {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.chat-bubble {
+  border-radius: 9px;
+  padding: 1rem;
+}

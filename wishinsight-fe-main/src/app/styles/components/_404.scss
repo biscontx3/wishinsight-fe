@@ -1,0 +1,27 @@
+.fourohfour {
+  p {
+    font-size: 72px;
+
+    background: #ffae00; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffae00,
+      #37313a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffae00,
+      #37313a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    font-weight: 600;
+  }
+  span {
+    font-size: 60px;
+
+    font-weight: 500;
+  }
+}

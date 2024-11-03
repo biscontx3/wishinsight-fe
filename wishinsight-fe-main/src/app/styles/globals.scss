@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./_componentImports.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+.link-navbar {
+  font-family: "Roboto", sans-serif !important;
+}
+
+p,
+span,
+input,
+label,
+div,
+.MuiInputBase-root,
+.title-navbar,
+.MuiList-root,
+ul,
+li,
+.MuiFormLabel-root {
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 1rem;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #faf9f6;
+  flex: 1;
+}
+
+.box-shadow-card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 9px;
+}

@@ -1,0 +1,21 @@
+.profile-card {
+  height: 100px;
+  min-width: 190px;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 2rem !important;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 600px) {
+    margin-right: 0 !important;
+  }
+}
+
+.custom-tab {
+  color: #1e1e1e !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #004792 !important;
+}

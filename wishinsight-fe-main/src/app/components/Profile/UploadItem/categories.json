@@ -1,0 +1,44 @@
+{
+    "categories": [
+        {
+            "value": "other",
+            "text": "Other"
+        },
+        {
+            "value": "electronics",
+            "text": "Electronics"
+        },
+        {
+            "value": "appliances",
+            "text": "Appliances"
+        },
+        {
+            "value": "furniture",
+            "text": "Furniture"
+        },
+        {
+            "value": "food",
+            "text": "Food"
+        },
+        {
+            "value": "clothing",
+            "text": "Clothing"
+        },
+        {
+            "value": "housing",
+            "text": "Housing"
+        },
+        {
+            "value": "tutoring",
+            "text": "Tutoring"
+        },
+        {
+            "value": "home-repair",
+            "text": "Home repair"
+        },
+        {
+            "value": "home-decor",
+            "text": "Home decor"
+        }
+    ]
+}

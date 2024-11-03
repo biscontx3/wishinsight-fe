@@ -1,0 +1,21 @@
+.login-modal {
+  background: #fff !important;
+  width: 500px !important;
+  height: 300px !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 9px;
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #333333 !important;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1rem;
+    color: #333333 !important;
+  }
+}

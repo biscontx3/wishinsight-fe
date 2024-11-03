@@ -1,0 +1,27 @@
+.users-items-modal {
+  background: #fff !important;
+  width: 500px !important;
+  min-height: 300px !important;
+  overflow: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 9px;
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: #333333 !important;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1rem;
+    color: #333333 !important;
+  }
+
+  .user-acc {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+}

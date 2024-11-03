@@ -1,0 +1,48 @@
+substitutions:
+  # Params with default values
+  _PROJECT_NAME: wishinsight-prod
+  _PROJECT_REGION: us-west1
+  _COCURRENCY: "40"
+  _TIMEOUT: "30"
+  _CONTAINER_REGION: eu.gcr.io
+  _TARGET_BUILD: development
+
+steps:
+  # Build Container image
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - "build"
+      - "--build-arg"
+      - "TARGET_BUILD=${_TARGET_BUILD}"
+      - "-t"
+      - "${_CONTAINER_REGION}/$PROJECT_ID/${_PROJECT_NAME}-${SHORT_SHA}"
+      - "."
+
+  # Push Container image to Container Repo
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "push"
+      - "${_CONTAINER_REGION}/$PROJECT_ID/${_PROJECT_NAME}-${SHORT_SHA}"
+
+    # Deploy Container image to Cloud Run
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      - "run"
+      - "deploy"
+      - "${_PROJECT_NAME}"
+      - "--image"
+      - "${_CONTAINER_REGION}/$PROJECT_ID/${_PROJECT_NAME}-${SHORT_SHA}"
+      - "--region"
+      - "${_PROJECT_REGION}"
+      - "--memory"
+      - "${_MEMORY}"
+      - "--concurrency"
+      - "${_COCURRENCY}"
+      - "--timeout"
+      - "${_TIMEOUT}"
+      - "--platform"
+      - "managed"
+      - "--allow-unauthenticated"
+      - "--no-use-http2"
+      - "--port"
+      - "3000"
